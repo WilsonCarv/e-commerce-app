@@ -1,0 +1,28 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "format:prettier": "prettier --ignore-unknown --write \"**/*.{css,js,json,scss,ts,html,tsx,cs}\"",
+		"prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+		"husky": "^8.0.3",
+		"prettier": "^3.2.5"
+	},
+  "lint-staged": {
+		"**/*": "prettier --ignore-unknown --write \"**/*.{css,js,json,scss,ts,html,cs}\" \"!coverage/**/*.html\" "
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 2,
+		"printWidth": 100,
+		"singleQuote": true,
+		"jsxBracketSameLine": true,
+		"trailingComma": "none",
+		"arrowParens": "avoid"
+	}
+}
