@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
 	selector: 'app-root',
-	imports: [RouterOutlet],
-	templateUrl: './app.component.html',
-	styleUrl: './app.component.scss'
+	template: `<h1>Hello World Angular</h1>`
 })
-export class AppComponent {
-	title = 'commerce.ui.angular';
-}
+export class AppComponent {}
